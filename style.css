@@ -1,0 +1,63 @@
+body {
+  background: url('./media/bg.jpeg');
+}
+
+input {
+  margin-left: 1vw;
+  padding: 0.3vw;
+}
+
+select {
+  margin-left: 1vw;
+  padding: 0.3vw;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 45vw;
+  background-color: white;
+  margin-top: 5vh;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rowtab {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.lefttab {
+  text-align: right;
+  width: 20vw;
+  margin-right: 1vw;
+}
+
+.righttab {
+  text-align: left;
+  width: 20vw;
+}
+
+.radiobox {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+.input-field {
+  margin-left: 1vw;
+  padding: 0.3vw;
+}

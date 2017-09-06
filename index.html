@@ -2,11 +2,115 @@
 <html>
 
 <head>
-  <!-- metadata elements -->
+  <title>SurveyForm</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- page contents -->
+  <div class="wrapper">
+    <h1>SurveyForm</h1>
+    <div class="container">
+      <p>Let us know how we can improve freeCodeCamp</p>
+      <div class="content">
+        <form method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+          <div class="rowtab">
+            <div class="lefttab">
+              <p>* Name:</p>
+            </div>
+            <div class="righttab">
+              <input type="text" required placeholder="Enter your name">
+            </div>
+          </div>
+          <div class="rowtab">
+            <div class="lefttab">
+              <p>* Age:</p>
+            </div>
+            <div class="righttab">
+              <input type="text" required placeholder="Enter your age">
+            </div>
+          </div>
+          <div class="rowtab">
+            <div class="lefttab">
+              <p>* Email:</p>
+            </div>
+            <div class="righttab">
+              <input type="text" required placeholder="Enter your Email">
+            </div>
+          </div>
+          <div class="rowtab">
+            <div class="lefttab">
+              <p>Which option best describes your current role?</p>
+            </div>
+            <div class="righttab">
+              <select name="situation">
+                    <option disabled selected>Select an option</option>
+                    <option>Student</option>
+                    <option>Full time Job</option>
+                    <option>Full time learner</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>
+            </div>
+          </div>
+          <div class="rowtab">
+            <div class="lefttab">
+              <p>* How likely is that you would recommend freeCodeCamp to a friend?</p>
+            </div>
+            <div class="righttab">
+              <div class="radiobox">
+                <label><input type="radio" required name="recommendation"> Definitely</label>
+                <label><input type="radio" required name="recommendation"> Maybe</label>
+                <label><input type="radio" required name="recommendation"> Not sure</label>
+              </div>
+            </div>
+          </div>
+          <div class="rowtab">
+            <div class="lefttab">
+              <p>What do you like most in FCC:</p>
+            </div>
+            <div class="righttab">
+              <select name="like">
+                      <option disabled selected>Select an option</option>
+                      <option>Challenges</option>
+                      <option>Projects</option>
+                      <option>Community</option>
+                      <option>Open Source</option>
+              </select>
+            </div>
+          </div>
+          <div class="rowtab">
+            <div class="lefttab">
+              <p>Things that should be improved in the future<br> (Check all that apply):</p>
+            </div>
+            <div class="righttab">
+              <div class="radiobox">
+                <label><input type="checkbox" required name="improvements"> Front-end Projects</label>
+                <label><input type="checkbox" required name="improvements"> Back-end Projects</label>
+                <label><input type="checkbox" required name="improvements"> Visualization</label>
+                <label><input type="checkbox" required name="improvements"> Open Source Community</label>
+                <label><input type="checkbox" required name="improvements"> Gitter help rooms</label>
+                <label><input type="checkbox" required name="improvements"> Videos</label>
+                <label><input type="checkbox" required name="improvements"> City Meetups</label>
+                <label><input type="checkbox" required name="improvements"> Wiki</label>
+                <label><input type="checkbox" required name="improvements"> Forum</label>
+                <label><input type="checkbox" required name="improvements"> Additional Courses</label>
+              </div>
+            </div>
+          </div>
+          <div class="rowtab">
+            <div class="lefttab">
+              <p>Any Comments or Suggestions?</p>
+            </div>
+            <div class="righttab">
+              <textarea class="input-field" placeholder="Enter your comment here..."></textarea>
+            </div>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
