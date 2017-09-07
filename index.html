@@ -4,18 +4,24 @@
 <head>
   <title>SurveyForm</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
 </head>
 
 <body>
   <div class="wrapper">
-    <h1>SurveyForm</h1>
+    <div class="topcontainer">
+      <h1 style=" font-family: 'Shrikhand', cursive;">SurveyForm</h1>
+    </div>
     <div class="container">
-      <p>Let us know how we can improve freeCodeCamp</p>
+      <div class="botarea">
+        Let us know how we can improve freeCodeCamp
+      </div>
       <div class="content">
         <form method="GET" action="https://crossorigin.me/https://freecodecamp.com">
           <div class="rowtab">
             <div class="lefttab">
-              <p>* Name:</p>
+              * Name:
             </div>
             <div class="righttab">
               <input type="text" required placeholder="Enter your name">
@@ -23,7 +29,7 @@
           </div>
           <div class="rowtab">
             <div class="lefttab">
-              <p>* Age:</p>
+              * Age:
             </div>
             <div class="righttab">
               <input type="text" required placeholder="Enter your age">
@@ -31,7 +37,7 @@
           </div>
           <div class="rowtab">
             <div class="lefttab">
-              <p>* Email:</p>
+              * Email:
             </div>
             <div class="righttab">
               <input type="text" required placeholder="Enter your Email">
@@ -39,7 +45,7 @@
           </div>
           <div class="rowtab">
             <div class="lefttab">
-              <p>Which option best describes your current role?</p>
+              Which option best describes your current role?
             </div>
             <div class="righttab">
               <select name="situation">
@@ -54,7 +60,7 @@
           </div>
           <div class="rowtab">
             <div class="lefttab">
-              <p>* How likely is that you would recommend freeCodeCamp to a friend?</p>
+              * How likely is that you would recommend freeCodeCamp to a friend?
             </div>
             <div class="righttab">
               <div class="radiobox">
@@ -66,7 +72,7 @@
           </div>
           <div class="rowtab">
             <div class="lefttab">
-              <p>What do you like most in FCC:</p>
+              What do you like most in FCC:
             </div>
             <div class="righttab">
               <select name="like">
@@ -80,32 +86,34 @@
           </div>
           <div class="rowtab">
             <div class="lefttab">
-              <p>Things that should be improved in the future<br> (Check all that apply):</p>
+              Things that should be improved in the future<br> (Check all that apply):
             </div>
             <div class="righttab">
               <div class="radiobox">
-                <label><input type="checkbox" required name="improvements"> Front-end Projects</label>
-                <label><input type="checkbox" required name="improvements"> Back-end Projects</label>
-                <label><input type="checkbox" required name="improvements"> Visualization</label>
-                <label><input type="checkbox" required name="improvements"> Open Source Community</label>
-                <label><input type="checkbox" required name="improvements"> Gitter help rooms</label>
-                <label><input type="checkbox" required name="improvements"> Videos</label>
-                <label><input type="checkbox" required name="improvements"> City Meetups</label>
-                <label><input type="checkbox" required name="improvements"> Wiki</label>
-                <label><input type="checkbox" required name="improvements"> Forum</label>
-                <label><input type="checkbox" required name="improvements"> Additional Courses</label>
+                <label><input type="checkbox"  name="improvements"> Front-end Projects</label>
+                <label><input type="checkbox"  name="improvements"> Back-end Projects</label>
+                <label><input type="checkbox"  name="improvements"> Visualization</label>
+                <label><input type="checkbox"  name="improvements"> Open Source Community</label>
+                <label><input type="checkbox"  name="improvements"> Gitter help rooms</label>
+                <label><input type="checkbox"  name="improvements"> Videos</label>
+                <label><input type="checkbox"  name="improvements"> City Meetups</label>
+                <label><input type="checkbox"  name="improvements"> Wiki</label>
+                <label><input type="checkbox"  name="improvements"> Forum</label>
+                <label><input type="checkbox"  name="improvements"> Additional Courses</label>
               </div>
             </div>
           </div>
-          <div class="rowtab">
+          <div class="rowtabextra">
             <div class="lefttab">
-              <p>Any Comments or Suggestions?</p>
+              Any Comments or Suggestions?
             </div>
             <div class="righttab">
-              <textarea class="input-field" placeholder="Enter your comment here..."></textarea>
+              <textarea rows: "5" cols="45" class="input-field" placeholder="Enter your comment here..."></textarea>
             </div>
           </div>
-          <button type="submit">Submit</button>
+          <div class="botarea">
+            <button type="submit">Submit</button>
+          </div>
         </form>
       </div>
     </div>
