@@ -14,14 +14,17 @@
       <h1 style=" font-family: 'Shrikhand', cursive;">SurveyForm</h1>
     </div>
     <div class="container">
-      <div class="botarea">
+      <div class="toparea">
         Let us know how we can improve freeCodeCamp
       </div>
+      <hr>
       <div class="content">
         <form method="GET" action="https://crossorigin.me/https://freecodecamp.com">
           <div class="rowtab">
             <div class="lefttab">
-              * Name:
+              <div class="questions">
+                * Name:
+              </div>
             </div>
             <div class="righttab">
               <input type="text" required placeholder="Enter your name">
@@ -29,15 +32,19 @@
           </div>
           <div class="rowtab">
             <div class="lefttab">
-              * Age:
+              <div class="questions">
+                * Age:
+              </div>
             </div>
             <div class="righttab">
-              <input type="text" required placeholder="Enter your age">
+              <input type="number" required placeholder="Enter your age">
             </div>
           </div>
           <div class="rowtab">
             <div class="lefttab">
-              * Email:
+              <div class="questions">
+                * Email:
+              </div>
             </div>
             <div class="righttab">
               <input type="text" required placeholder="Enter your Email">
@@ -45,7 +52,9 @@
           </div>
           <div class="rowtab">
             <div class="lefttab">
-              Which option best describes your current role?
+              <div class="questions">
+                Which option best describes your current role?
+              </div>
             </div>
             <div class="righttab">
               <select name="situation">
@@ -60,7 +69,9 @@
           </div>
           <div class="rowtab">
             <div class="lefttab">
-              * How likely is that you would recommend freeCodeCamp to a friend?
+              <div class="questions">
+                * How likely is that you would recommend freeCodeCamp to a friend?
+              </div>
             </div>
             <div class="righttab">
               <div class="radiobox">
@@ -72,7 +83,9 @@
           </div>
           <div class="rowtab">
             <div class="lefttab">
-              What do you like most in FCC:
+              <div class="questions">
+                What do you like most in FCC:
+              </div>
             </div>
             <div class="righttab">
               <select name="like">
@@ -86,7 +99,9 @@
           </div>
           <div class="rowtab">
             <div class="lefttab">
-              Things that should be improved in the future<br> (Check all that apply):
+              <div class="questions">
+                Things that should be improved in the future<br> (Check all that apply):
+              </div>
             </div>
             <div class="righttab">
               <div class="radiobox">
@@ -105,7 +120,9 @@
           </div>
           <div class="rowtabextra">
             <div class="lefttab">
-              Any Comments or Suggestions?
+              <div class="questions">
+                Any Comments or Suggestions?
+              </div>
             </div>
             <div class="righttab">
               <textarea rows: "5" cols="45" class="input-field" placeholder="Enter your comment here..."></textarea>
