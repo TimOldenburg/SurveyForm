@@ -20,14 +20,11 @@ select {
 }
 
 hr {
-  width: 95%;
-  font-size: 1px;
-  color: rgb(51, 67, 152);
-  line-height: 1px;
-  background-color: rgb(51, 67, 152);
-  margin-top: -6px;
-  margin-bottom: 10px;
-  font-color: rgb(51, 67, 152);
+  width: 80%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border-top: 2px solid rgb(51, 67, 152);
+  border-bottom: 1px solid rgba(51, 67, 152, 0.53);
 }
 
 .wrapper {
@@ -116,7 +113,6 @@ hr {
 
 .toparea {
   margin-top: 5vh;
-  margin-bottom: 5vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -126,4 +122,29 @@ hr {
 
 .questions {
   margin-right: 1vw;
+}
+
+.submitbutton {
+  background-color: rgb(51, 67, 152);
+  color: white;
+  border: 2px solid rgba(1, 33, 132, 0.00);
+  padding: 1vh 1.5vw 1vh 1.5vw;
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.submitbutton:hover {
+  animation-name: transparent;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes transparent {
+  100% {
+    background-color: rgba(51, 67, 152, 0.00);
+    border: 2px solid #012184;
+    color: #012184;
+    font-weight: bold;
+  }
 }
