@@ -67,28 +67,30 @@ hr {
 }
 
 .rowtab {
+  width: 100%;
   display: flex;
   align-items: baseline;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 1.5vh;
+  margin-bottom: 15px;
 }
 
 .rowtabextra {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
+  flex-grow: 1;
   margin-bottom: 1vh;
 }
 
 .lefttab {
-  width: 20vw;
-  margin-right: 0.5vw;
+  text-align: end;
+  width: 50%;
+  padding-right: 10px;
 }
 
 .righttab {
-  width: 20vw;
-  margin-left: 0.5vw;
+  flex-grow: 1;
 }
 
 .radiobox {
@@ -100,6 +102,7 @@ hr {
 .input-field {
   margin-left: 1vw;
   padding: 0.3vw;
+  flex-grow: 1;
 }
 
 .botarea {
@@ -120,6 +123,8 @@ hr {
 }
 
 .questions {
+  display: flex;
+  flex-wrap: wrap;
   margin-right: 1vw;
 }
 
@@ -154,5 +159,21 @@ hr {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+  .lefttab {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1vh;
+    margin-right: 0;
+    width: 80%;
+  }
+  .righttab {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    width: 80%;
+  }
+  .questions {
+    margin-right: 0;
   }
 }

@@ -18,121 +18,89 @@
         Let us know how we can improve freeCodeCamp
       </div>
       <hr>
-      <div class="content">
-        <form method="GET" action="https://crossorigin.me/https://freecodecamp.com">
-          <div class="rowtab">
-            <div class="lefttab">
-              <div class="questions">
-                * Name:
-              </div>
-            </div>
-            <div class="righttab">
-              <input type="text" required placeholder="Enter your name">
-            </div>
+
+      <form class="content" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+        <div class="rowtab">
+          <label for: "name" class="questions lefttab">
+              * Name:
+          </label>
+          <input name="name" class="righttab" type="text" required placeholder="Enter your name">
+        </div>
+        <div class="rowtab">
+          <label for="age" class="questions lefttab">
+              * Age:
+            </label>
+          <input name="age" class="righttab" type="number" required placeholder="Enter your age">
+        </div>
+        <div class="rowtab">
+          <label for="email" class="questions lefttab">
+              * Email:
+          </label>
+          <input name="email" class="righttab" type="email" required placeholder="Enter your Email">
+        </div>
+        <div class="rowtab">
+          <label for="role" class="questions lefttab">
+              Which option best describes your current role?
+          </label>
+          <select name="role" class="righttab" name="situation">
+            <option disabled selected>Select an option</option>
+            <option>Student</option>
+            <option>Full time Job</option>
+            <option>Full time learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="rowtab">
+          <label for="recommendation" class="questions lefttab">
+              * How likely is that you would recommend freeCodeCamp to a friend?
+          </label>
+          <div class="radiobox righttab">
+            <label><input type="radio" required name="recommendation"> Definitely</label>
+            <label><input type="radio" required name="recommendation"> Maybe</label>
+            <label><input type="radio" required name="recommendation"> Not sure</label>
           </div>
-          <div class="rowtab">
-            <div class="lefttab">
-              <div class="questions">
-                * Age:
-              </div>
-            </div>
-            <div class="righttab">
-              <input type="number" required placeholder="Enter your age">
-            </div>
-          </div>
-          <div class="rowtab">
-            <div class="lefttab">
-              <div class="questions">
-                * Email:
-              </div>
-            </div>
-            <div class="righttab">
-              <input type="email" required placeholder="Enter your Email">
-            </div>
-          </div>
-          <div class="rowtab">
-            <div class="lefttab">
-              <div class="questions">
-                Which option best describes your current role?
-              </div>
-            </div>
-            <div class="righttab">
-              <select name="situation">
-                    <option disabled selected>Select an option</option>
-                    <option>Student</option>
-                    <option>Full time Job</option>
-                    <option>Full time learner</option>
-                    <option>Prefer not to say</option>
-                    <option>Other</option>
-                </select>
-            </div>
-          </div>
-          <div class="rowtab">
-            <div class="lefttab">
-              <div class="questions">
-                * How likely is that you would recommend freeCodeCamp to a friend?
-              </div>
-            </div>
-            <div class="righttab">
-              <div class="radiobox">
-                <label><input type="radio" required name="recommendation"> Definitely</label>
-                <label><input type="radio" required name="recommendation"> Maybe</label>
-                <label><input type="radio" required name="recommendation"> Not sure</label>
-              </div>
-            </div>
-          </div>
-          <div class="rowtab">
-            <div class="lefttab">
-              <div class="questions">
-                What do you like most in FCC:
-              </div>
-            </div>
-            <div class="righttab">
-              <select name="like">
+        </div>
+        <div class="rowtab">
+          <label for="like" class="questions lefttab">
+              What do you like most in FCC:
+            </label>
+          <select name="like" class="righttab">
                       <option disabled selected>Select an option</option>
                       <option>Challenges</option>
                       <option>Projects</option>
                       <option>Community</option>
                       <option>Open Source</option>
               </select>
-            </div>
+        </div>
+        <div class="rowtab">
+          <label for="improvements" class="questions lefttab">
+              Things that should be improved in the future (Check all that apply):
+            </label>
+          <div class="radiobox righttab">
+            <label><input type="checkbox"  name="improvements"> Front-end Projects</label>
+            <label><input type="checkbox"  name="improvements"> Back-end Projects</label>
+            <label><input type="checkbox"  name="improvements"> Visualization</label>
+            <label><input type="checkbox"  name="improvements"> Open Source Community</label>
+            <label><input type="checkbox"  name="improvements"> Gitter help rooms</label>
+            <label><input type="checkbox"  name="improvements"> Videos</label>
+            <label><input type="checkbox"  name="improvements"> City Meetups</label>
+            <label><input type="checkbox"  name="improvements"> Wiki</label>
+            <label><input type="checkbox"  name="improvements"> Forum</label>
+            <label><input type="checkbox"  name="improvements"> Additional Courses</label>
           </div>
-          <div class="rowtab">
-            <div class="lefttab">
-              <div class="questions">
-                Things that should be improved in the future<br> (Check all that apply):
-              </div>
-            </div>
-            <div class="righttab">
-              <div class="radiobox">
-                <label><input type="checkbox"  name="improvements"> Front-end Projects</label>
-                <label><input type="checkbox"  name="improvements"> Back-end Projects</label>
-                <label><input type="checkbox"  name="improvements"> Visualization</label>
-                <label><input type="checkbox"  name="improvements"> Open Source Community</label>
-                <label><input type="checkbox"  name="improvements"> Gitter help rooms</label>
-                <label><input type="checkbox"  name="improvements"> Videos</label>
-                <label><input type="checkbox"  name="improvements"> City Meetups</label>
-                <label><input type="checkbox"  name="improvements"> Wiki</label>
-                <label><input type="checkbox"  name="improvements"> Forum</label>
-                <label><input type="checkbox"  name="improvements"> Additional Courses</label>
-              </div>
-            </div>
-          </div>
-          <div class="rowtabextra">
-            <div class="lefttab">
-              <div class="questions">
-                Any Comments or Suggestions?
-              </div>
-            </div>
-            <div class="righttab">
-              <textarea rows: "5" cols="45" class="input-field" placeholder="Enter your comment here..."></textarea>
-            </div>
-          </div>
-          <div class="botarea">
-            <button class="submitbutton" type="submit">Submit</button>
-          </div>
-        </form>
-      </div>
+        </div>
+        <div class="rowtabextra">
+          <label for="suggestions" class="questions lefttab">
+              Any Comments or Suggestions?
+            </label>
+          <textarea name="suggestions" class="input-field righttab" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="botarea">
+          <button class="submitbutton" type="submit">Submit</button>
+        </div>
+      </form>
+
     </div>
   </div>
 
