@@ -1,5 +1,8 @@
 body {
   background: url('./media/bg.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 input {
@@ -188,5 +191,8 @@ hr {
   }
   select {
     font-size: 80%;
+  }
+  .content {
+    padding: 0 15vw 0 15vw;
   }
 }
